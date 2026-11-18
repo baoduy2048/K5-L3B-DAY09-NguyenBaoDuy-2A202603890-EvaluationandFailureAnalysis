@@ -9,6 +9,17 @@ import sys
 import pytest
 
 
+@pytest.mark.student
+def test_sha12_is_stable_across_line_endings(tmp_path):
+    from lab9.evalset import sha12
+
+    lf = tmp_path / "lf.jsonl"
+    crlf = tmp_path / "crlf.jsonl"
+    lf.write_bytes(b'{"item_id":"E-001"}\n')
+    crlf.write_bytes(b'{"item_id":"E-001"}\r\n')
+    assert sha12(lf) == sha12(crlf)
+
+
 @pytest.fixture
 def evalset_cli(tmp_path):
     source = tmp_path / "data/public_claims.jsonl"
