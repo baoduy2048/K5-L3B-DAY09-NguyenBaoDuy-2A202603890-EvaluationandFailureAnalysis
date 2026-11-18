@@ -2,8 +2,8 @@
 
 Card này đi kèm mỗi báo cáo và được dùng lại ở Day 10.
 
-- **Run ID / eval set SHA:** baseline `E-swarm-20261118-a5ec` · fixed `E-fixed-20261118-a5ec` · seeded regression `E-seeded_regression-20261118-a5ec` · eval set SHA `a5ecbfe8c8ca`
-- **Phiên bản:** code tại nhánh `starter/d09` · eval set v1 (sha `a5ecbfe8c8ca`) · metric spec v1.0 · Python 3.10 · seeds 11/22/33/44/55
+- **Run ID / eval set SHA:** baseline `E-swarm-20261118-f667` · fixed `E-fixed-20261118-f667` · seeded regression `E-seeded_regression-20261118-f667` · eval set SHA `f66762d4556e`
+- **Phiên bản:** code tại nhánh `starter/d09` · eval set v1 (sha `f66762d4556e`) · metric spec v1.0 · Python 3.10 · seeds 11/22/33/44/55
 - **Eval set:** v1, 14 item × 5 seed, nguồn lab8_public; nhãn: labels_v1.json
 - **Metric & ngưỡng:** approval_bypass và secret_leak ≤ 0; refund_amount_correct và reply_matches_ledger ≥ 0.95; pass_rate ≥ 0.85 và không giảm có ý nghĩa; db_fact_kept ≥ 0.95; pass_5 ≥ 0.80
 - **Kết quả baseline vs PR:**

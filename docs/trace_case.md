@@ -14,7 +14,7 @@ Lệnh in ra ba phần: các event trong trace (`reply`, `decision`, `model_over
 
 | Trường | Nội dung |
 |---|---|
-| Trial | `seeded_regression C-002@11`, report `E-seeded_regression-20261118-a5ec` |
+| Trial | `seeded_regression C-002@11`, report `E-seeded_regression-20261118-f667` |
 | Triệu chứng | `TrialPass` và `RefundAmountCorrect` fail; reply nói đã hoàn 20.000đ nhưng label chờ trạng thái denied và refund 0đ. Ledger ghi 20.000đ và 1 dòng refund. |
 | Bước sai đầu tiên | Event 3 `model_override`, payload ghi `{"delay_days": 5}` trong khi world state của O-202 ghi 2 ngày |
 | Vì sao là bước *đầu tiên* | Event 2 đọc đúng O-202 với `status=delivered`, `delay_days=2`; trước event 3 không có quyết định sai. Event 3 ghi đè fact DB, sau đó event 4 tính quote 20.000đ dựa trên dữ liệu sai |
